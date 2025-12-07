@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Birds Game 3 — Официальный сайт</title>
+<style>
+  /* Сброс и базовые стили */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #81c784, #aed581);
+    color: #2e2e2e;
+    line-height: 1.6;
+  }
+  header {
+    background-color: #4caf50;
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  }
+  header p {
+    font-size: 1.3rem;
+    margin-top: 8px;
+    font-weight: 500;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  main section {
+    margin-bottom: 40px;
+  }
+  main h2 {
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .description img {
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
+  }
+  .description p {
+    flex: 1 1 400px;
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .game-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .game-frame {
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
+    border: 4px solid #4caf50;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+  
+  .buttons {
+    text-align: center;
+    margin-top: 25px;
+  }
+  .btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn:hover, .btn:focus {
+    background-color: #388e3c;
+    outline: none;
+  }
+
+  .instructions ul {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    padding-left: 20px;
+  }
+  .instructions ul li {
+    margin: 10px 0;
+  }
+
+  footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    font-size: 1rem;
+    margin-top: 40px;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.2);
+  }
+
+  /* Адаптивность */
+  @media(max-width: 600px) {
+    .description {
+      flex-direction: column;
+    }
+    .description img, .description p {
+      flex: 1 1 100%;
+    }
+    .game-frame {
+      max-width: 100%;
+      height: 500px;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    main h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Birds Game 3</h1>
+  <p>Погрузитесь в мир захватывающих приключений с птицами!</p>
+</header>
+
+<main>
+  <section class="description">
+    <img src="https://raw.githubusercontent.com/Nashvaniekanala/birdsgame3web/refs/heads/main/image_692e2ea5cd21e9.56672461.png" alt="Birds Game 3 — Скриншот игры" />
+    <p>
+      Birds Game 3 — это динамичная и увлекательная аркада, где вы управляете веселыми птицами,
+      проходите уровни, избегаете препятствий и собираете бонусы. Отличная игра для всех возрастов,
+      которая тренирует реакцию и приносит море удовольствия!
+    </p>
+  </section>
+
+  <section class="play">
+    <h2>Играй прямо сейчас</h2>
+    <div class="game-container">
+      <!-- Здесь встроенный iframe с вашей игрой -->
+      <!-- Замените src ниже на URL вашей игры или файла -->
+      <iframe 
+        src=""
+        title="Birds Game 3"
+        class="game-frame" 
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="buttons">
+      <a href="https://raw.githubusercontent.com/Nashvaniekanala/birdsgame3web/refs/heads/main/error" target="_blank" class="btn">Запустить в новом окне (не работает на некоторый срок)</a>
+      <a href="download.html" target="_blank" class="btn">Скачать игру</a>
+    </div>
+  </section>
+
+  <section class="instructions">
+    <h2>Как играть</h2>
+    <ul>
+      <li>Управляйте птицей с помощью стрелок на клавиатуре или касаний экрана на телефоне.</li>
+      <li>Избегайте столкновений с другими игроками и горами.</li>
+      <li>Собирайте яйца,  для получения очков, прокачки игрового аккаунта и усилений.</li>
+      <li>Открывайте ящики и тд.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Birds Game 3. Все права защищены.</p>
+  <p>Связь: <a href="mailto:error" style="color: #c8facc;">error #7652 domain cannot be found</a></p>
+</footer>
+
+</body>
+</html>

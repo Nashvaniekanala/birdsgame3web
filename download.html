@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Скачать игру Birds Game 3</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #81c784, #aed581);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #2e2e2e;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .download-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    min-width: 200px;
+    text-align: center;
+  }
+
+  .btn:hover {
+    background-color: #388e3c;
+  }
+
+  @media(max-width: 500px) {
+    .download-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn {
+      min-width: 80%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Скачать Birds Game 3</h1>
+<p>Выберите подходящий вариант для вашего устройства:</p>
+<div class="download-buttons">
+  <a href="https://github.com/Nashvaniekanala/birdsgame3web/raw/refs/heads/main/base.apk" class="btn" download>Скачать на Android</a
+  <a href="https://your-server.com/download/birds_game_3_mobile.apk" class="btn" download>Скачать для ПК</a>
+</div>
+
+</body>
+</html>
